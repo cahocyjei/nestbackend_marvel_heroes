@@ -1,0 +1,9 @@
+POST http://localhost:3000/user/created
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IkNhbWlsbyIsInN1YiI6IjY2OWM2YWJiOWE3YTg1YzM4M2UyYjMwNiIsImlhdCI6MTcyMjI2ODg2MCwiZXhwIjoxNzIyMjcyNDYwfQ.ZCsv7N-ldy4cKvnzXNAqlfGeNdtwvC4mDhNHtB3PlJw
+
+{
+  "name": "Martha",
+  "document": "45464101",
+  "email": "homartica@gmail.com"
+}

@@ -1,0 +1,3 @@
+GET http://localhost:3000/userid/669c6abb9a7a85c383e2b306
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IkNhbWlsbyIsInN1YiI6IjY2OWM2YWJiOWE3YTg1YzM4M2UyYjMwNiIsImlhdCI6MTcyMjI2ODg2MCwiZXhwIjoxNzIyMjcyNDYwfQ.ZCsv7N-ldy4cKvnzXNAqlfGeNdtwvC4mDhNHtB3PlJw

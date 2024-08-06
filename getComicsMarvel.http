@@ -1,0 +1,2 @@
+GET http://localhost:3000/comics/marvel
+Content-Type: application/json
