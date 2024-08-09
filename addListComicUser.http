@@ -1,7 +1,7 @@
 POST http://localhost:3000/comics/addList/1017100
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IkNhbWlsbyBBbmRyZXMiLCJzdWIiOiI2NjljNmFiYjlhN2E4NWMzODNlMmIzMDYiLCJpYXQiOjE3MjI5NjE1MDksImV4cCI6MTcyMjk2NTEwOX0.tzJ7uNC6rsA7HRGKVfLV-e4CZx_R5OZPaUn65zN-Mfc 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Ik9tYXIiLCJzdWIiOiI2NmI2MGQ1MzI1MDM5MmQyODQwMDlmYjciLCJpYXQiOjE3MjMyMDc5MTksImV4cCI6MTcyMzIxMTUxOX0.d1hTcMG7R1R9XiDddtwi6c8AppzcbTrpFg24pvRbYZo 
 
 {
-  "nameList": "Tour of Heroes"
+  "nameList": "My ListHeroes"
 }

@@ -6,6 +6,7 @@ import { UserDto } from 'src/dto/user.dto';
 import * as crypto from 'crypto';
 import { SingInDto } from 'src/interfaces/login.interface';
 import { use } from 'passport';
+import { UserI } from 'src/interfaces/user.interfaces';
 
 @Injectable()
 export class UserService {
@@ -29,8 +30,8 @@ export class UserService {
     return await this.userModel.findById( id );
   }
 
-  async findOne(userName: string): Promise<any>{
-    const user = await this.userModel.findOne({ name: userName }).exec();
+  async findOne(userName: string): Promise<UserI>{
+    const user: UserI = await this.userModel.findOne({ name: userName });
     return user;
   }
 
