@@ -49,7 +49,7 @@ export class ComicsController {
       console.log(error);
     }
   }
-  @Public()
+  //@Public()
   @Get('mongodb')
   async getListComicsUser(@Request() req: any) {
     try {
