@@ -3,16 +3,17 @@ import { AuthService } from './module/auth/auth.service';
 import { Response } from 'express';
 import { LocalAuthGuard } from './strategys/local-auth.guard';
 import { Public } from '././config/config';
+import { UserService } from './module/users/user.service';
 
 @Controller('auth')
 export class AppController {
-  constructor(private authService: AuthService) { }
+  constructor(private authService: AuthService, private userService: UserService) { }
 
   @HttpCode(HttpStatus.OK)
   @UseGuards(LocalAuthGuard)
   @Public()
   @Post('login')
-  async login(@Request() req: any) {
+  async login(@Request() req: any, @Body('name') name: string) {
     return await this.authService.login(req.user);
   }
 
@@ -22,10 +23,9 @@ export class AppController {
     res.clearCookie('Token', { path: '/' });
     res.send('Sesion Cerrada');
   }
-  //@Public()
+  
   @Get('profile')
   getProfile(@Request() req: any) {
-    console.log(req.user);
     return req.user;
   }
 }

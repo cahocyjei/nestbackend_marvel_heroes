@@ -49,11 +49,10 @@ export class ComicsController {
       console.log(error);
     }
   }
-  //@Public()
+  @Public()
   @Get('mongodb')
   async getListComicsUser(@Request() req: any) {
     try {
-      console.log(req.user.id);
       return await this.comicsService.getListComicsUser(req.user.id);
     } catch (error) {
       console.error(error);
